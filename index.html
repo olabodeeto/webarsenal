@@ -3,61 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webarsenal Basic Html</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Webarsenal Basic css</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>lOGO</div>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
     <main>
-        <!------Intro section-->
-       <section>
-            <h1>Webarsenal Basic Html</h1>
-            <h4>This is just a practice of what i learnt on basic html class on
-                this day <strong>Jan 29 2021</strong> The current time when coding this<strong>11:54</strong>
-            </h4>
-       </section>
+        <h1>Basic css practise</h1>
 
+        <h4>Box model</h4>
+        <p>
+            In this lesson i learnt about box model, css varibles, colors,
+            some selectors on this day <strong>30 jan 2021</strong>
+        </p>
 
-       <!------About section-->
-       <section>
-        <h1>About me</h1>
-        <div>
-            I am Olabode Eto, a software developer from Nigeria, this basic html
-            file is for experimenting my knowledge of basic html.
-        </div>
-        <div>
-            <img src="./img/profile.jpg" alt="my profile pic">
-        </div>
-       </section>
+        <section>
+            <div class="parent">
+                <div class="first-child">
+                    <h4>First child</h4>
+                </div>
+                <div class="second-child">
+                    <h4>Second child</h4>
+                </div>
+            </div>
+        </section>
 
-       <section>
-           <p>My road map in steps below</p>
-            <ol>
-                <li>Computer science principles</li>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Git</li>
-                <li>Javascript</li>
-                <li>Nodejs</li>
-                <li>Mongodb</li>
-                <li>Reactjs</li>
-            </ol>
-       </section>
-       <hr>
+        <section>
+            <div class="parent-inline">
+                <div class="first-child-inline">
+                    <h4>First child inline</h4>
+                </div>
+                <div class="second-child-inline">
+                    <h4>Second child inline</h4>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        Webarsenal &COPY; 2021
-    </footer>
 </body>
 </html>
