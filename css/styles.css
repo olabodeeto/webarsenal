@@ -53,3 +53,8 @@ main{
 .bio{
     font-style: italic;
 }
+.date{
+    color: rgba(131, 130, 130, 0.7);
+    margin-top: 10px;
+    font-size: 12px;
+}
