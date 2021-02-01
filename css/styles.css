@@ -30,9 +30,7 @@ a{
 .header .menu{
     clear: both;
     max-height: 0;
-    position: absolute;
-    width: 100%;
-    margin-top: 62px;
+    position: relative;
     transition: max-height .4s ease-out;
 }
 
