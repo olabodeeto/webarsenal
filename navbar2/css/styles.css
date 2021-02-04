@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    background-color: rgb(224, 224, 225);
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0,0, 0.2);
+    z-index: 4;
+}
+.header .logo{
+    font-size: 32px;
+    padding: 14px 20px;
+    float: left;
+}
+.header  a{
+    text-decoration: none;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    
+}
+
+.header ul a{
+    display: block;
+    padding: 10px;
+    color: white;
+    outline: 1px solid orange;
+}
+.header ul a:hover{
+    background-color: rgb(252, 124, 77);
+}
+
+.header .menu{
+    position: absolute;
+    top: 58px;
+    min-width: 100%;
+    background: orangered;
+    clear: both;
+    right: -400px;
+    border-radius: 500px;
+    height: 0;
+    transition:all .8s ease-in-out;
+    
+   
+}
+.header .menu-icon{
+    margin-top: 18px;
+    position: relative;
+    padding: 18px;
+    float: right;
+    cursor: pointer;
+
+}
+
+.header .menu-icon .nav-icon{
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    transition: background .2s ease-in-out;
+}
+
+.header .menu-icon .nav-icon::before{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    transition: all .6s ease-out;
+    top: 5px;
+}
+.header .menu-icon .nav-icon::after{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+    transition: all .6s ease-out;
+    top: -5px;
+}
+
+.header .checkbox{
+    display: none;
+}
+
+.header .checkbox:checked ~ .menu{
+    right: 0px;
+    height: 100vh;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.header .checkbox:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .checkbox:checked ~ .menu-icon .nav-icon::before{
+    transform:  rotate(45deg);
+    top: 0;
+    
+}
+.header .checkbox:checked ~ .menu-icon .nav-icon::after{
+    transform:  rotate(-45deg);
+    top: 0;
+    
+}
+
+main{
+    margin: auto;
+}
+
+.showcase{
+    position: relative;
+    top: 0;
+    padding: 80px 0  0 50px;
+    background-color: #f6fdfe;
+    min-height: 88vh;
+}
+
+.showcase .intro-header{
+    position: relative;
+    top: 40px;
+}
+
+.showcase .intro-header h1{
+    font-size: 4rem;
+    color: #1a4f7a;
+}
+
+
+
+
+@media (min-width:768px){
+ .header{
+     display: flex;
+     justify-content: space-between;
+ }
+ .header .logo{
+     float: none;
+ }
+    .header .menu-icon{
+        display: none;
+    }
+
+    .header .menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        background:none;
+        height: unset;
+        min-width: 40%;
+    }
+
+    .header ul li{
+        position: relative;
+        top: 12px;
+        color: tomato;
+        outline: none;
+        overflow: hidden;
+        padding: 10px;
+        display: inline;
+    }
+    .header ul a{
+        display: inline;
+        color: tomato;
+        outline-style: none;
+    }
+    .header ul a:hover{
+        background-color: rgb(252, 124, 77);
+        color: white;
+        border-radius: 100px;
+        transition: background .9s ease-in-out;
+    }
+
+    
+    
+
+}
